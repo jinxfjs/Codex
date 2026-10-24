@@ -2,9 +2,9 @@
 
 ## 环境
 
-验证版本为 Python 3.12.14，代码使用 Python 3.11 起提供的 `tomllib`。
+本地验证版本为 Python 3.12.14，CI 固定使用两平台均可获取的 Python 3.12.10。代码使用 Python 3.11 起提供的 `tomllib`。
 运行与测试仅依赖标准库；`requirements.txt` 不包含待下载包。
-`.python-version` 固定演示用解释器版本，CI 按该版本运行。新增真实分析依赖时另建精确版本锁定文件。
+`.python-version` 固定可跨平台安装的 CI 解释器版本。新增真实分析依赖时另建精确版本锁定文件。
 
 ## 执行
 
@@ -48,7 +48,7 @@ sex 类别 F=3、M=4、缺失=1。均为未加权合成数据汇总，不能解�
 
 `verify_reproducibility.py` 在 `reports/` 下建立两个临时目录，比较全部四个输出后清理自身临时目录。
 它验证重复运行一致性；不能代替外部方法验证，也不证明跨 Python 版本、不同代码或真实数据的统计结果正确。
-本地未执行远端 GitHub Actions；工作流待首次推送后运行 Windows 与 Ubuntu 检查。
+推送后 GitHub Actions 会运行 Windows 与 Ubuntu 检查。请在仓库 Actions 页面查看对应提交的实际结果。
 
 ## 重跑与结果保留
 
