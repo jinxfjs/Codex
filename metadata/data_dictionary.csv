@@ -1,0 +1,10 @@
+variable,dtype,required,minimum,maximum,levels,unit,description,source,missing_rule,derivation
+participant_id,string,true,,,,none,Artificial participant identifier,synthetic fixture,not allowed,manually assigned DEMO_ identifier
+cycle,category,true,,,SYNTHETIC,none,Artificial cycle marker,synthetic fixture,not allowed,fixed literal SYNTHETIC
+age,integer,false,0,120,,years,Artificial age,synthetic fixture,empty cell means missing,manually assigned
+sex,category,false,,,F|M,none,Artificial category for testing only,synthetic fixture,empty cell means missing,manually assigned; not an NHANES coding map
+exposure_demo,integer,false,0,1,,binary,Artificial exposure flag without clinical meaning,synthetic fixture,empty cell means missing,manually assigned; not MASLD criteria
+outcome_demo,integer,false,0,1,,binary,Artificial outcome flag without clinical meaning,synthetic fixture,empty cell means missing,manually assigned; not MASLD status
+survey_weight,number,true,0.000001,,,arbitrary,Artificial positive weight retained but never used for estimation,synthetic fixture,not allowed,manually assigned; not an NHANES sample weight
+stratum,integer,true,1,,,none,Artificial stratum marker retained for schema only,synthetic fixture,not allowed,manually assigned
+psu,integer,true,1,,,none,Artificial PSU marker retained for schema only,synthetic fixture,not allowed,manually assigned

@@ -1,0 +1,13 @@
+[project]
+id = "nhanes_masld_demo"
+name = "NHANES–MASLD synthetic workflow demonstration"
+data_mode = "synthetic"
+
+[paths]
+source = "data/synthetic/participants.csv"
+dictionary = "metadata/data_dictionary.csv"
+output = "reports/demo"
+
+[cohort]
+# Workflow example only; this does not define the final study population.
+minimum_age = 20

@@ -1,0 +1,2 @@
+variable,dtype,required,minimum,maximum,levels,unit,description,source,missing_rule,derivation
+REPLACE_ME,string,false,,,,TODO,TODO,TODO,TODO,TODO

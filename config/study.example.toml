@@ -1,0 +1,24 @@
+# Planning template; the demo executor rejects data_mode=real.
+# Copy to config/study.local.toml after recording protocol decisions.
+[project]
+id = "nhanes_masld"
+name = "TODO: prespecified research question"
+data_mode = "real"
+
+[paths]
+source = "data/processed/analysis.csv"
+dictionary = "metadata/study_dictionary.csv"
+output = "reports/study"
+
+[cohort]
+minimum_age = 20 # TODO: use protocol-defined eligibility.
+
+[study]
+protocol_version = "TODO"
+cycles = ["TODO"]
+exposure_definition = "TODO: variables, units, derivation, reference"
+masld_definition = "TODO: operational criteria and cited reference"
+weight_variable = "TODO: justified by analytic components and cycles"
+strata_variable = "TODO"
+psu_variable = "TODO"
+missing_data_policy = "TODO"

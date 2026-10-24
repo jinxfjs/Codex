@@ -1,0 +1,3 @@
+# Runtime and tests use the Python standard library only.
+# Validated interpreter: Python 3.12.14. No pip install is needed.
+# Lock actual analysis dependencies when real-data modules are introduced.

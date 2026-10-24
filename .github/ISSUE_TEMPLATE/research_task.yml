@@ -1,0 +1,18 @@
+name: 研究任务
+description: 记录一个可执行和可验收的研究任务
+title: "[研究] "
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: 研究问题或工程问题
+      description: 写明目标、范围及方案章节，勿填写个体数据。
+    validations:
+      required: true
+  - type: textarea
+    id: deliverable
+    attributes:
+      label: 交付物与验收方式
+      description: 写明预期文件、运行命令和通过条件。
+    validations:
+      required: true
